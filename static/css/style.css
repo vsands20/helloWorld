@@ -1,0 +1,35 @@
+<!--This is where i am styling paragraphs with CSS -->
+
+p{
+    color: darkslateblue;
+    font-weight: bold;
+}
+<!--This is where i am styling header 2 CSS -->
+
+h2{
+    color: blueviolet;
+    text-decoration: underline;
+}
+<!--This is where i am styling tables CSS -->
+
+table{
+    border-color:red;
+}
+<!--This is where i am styling the third paragraph with CSS -->
+
+p#third-one{
+    color:maroon;
+    text-decoration: underline;
+}
+<!--This is where i am styling another paragraph with a class attribute with CSS -->
+
+p.small-green{
+    color:darkgreen;
+    font-size:.5em;
+}
+    <!--This is where i am styling the size of my images with CSS -->
+
+img.logo{
+   height: 72px;
+    width:267px;
+}
