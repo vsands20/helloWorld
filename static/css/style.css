@@ -29,7 +29,7 @@ p.small-green{
 }
     <!--This is where i am styling the size of my images with CSS -->
 
-img.logo{
+img{
    height: 72px;
     width:267px;
 }
