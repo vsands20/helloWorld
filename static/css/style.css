@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>About Me</title>
+
 /*This is where i am styling paragraphs with CSS */
 
 p{
@@ -12,3 +16,24 @@ h2{
 }
 /*This is where i am styling tables CSS */
 
+table{
+    border-color:red;
+}
+/*-This is where i am styling the third paragraph with CSS */
+
+p#third-one{
+    color:maroon;
+    text-decoration: underline;
+}
+/* This is where i am styling another paragraph with a class attribute with CSS */
+
+p.small-green{
+    color:darkgreen;
+    font-size:.5em;
+}
+/* This is where i am styling the size of my images with CSS */
+
+img{
+   height: 72px;
+    width:267px;
+}
