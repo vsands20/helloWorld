@@ -19,10 +19,13 @@ def about():
 def aboutcss():
     return render_template('about-css.html')
 
-@app.route('/favorite-course')
+@app.route('/favorite-course', methods=['GET','POST'])
 def favoritecourse():
-    print('Subject Entered: ' + request.args.get('subject_name'))
-    print('Course Entered: ' + request.args.get('course_number'))
+    if request.method == 'POST':
+        print('Subject Entered: ' + request.args.get('subject_name'))
+        print('Course Entered: ' + request.args.get('course_number'))
+        print ('You entered your favorite course as:' + request.form.get('subject_name''  ''course_number'))
+
 
     return render_template('favorite-course.html')
 
