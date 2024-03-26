@@ -21,7 +21,6 @@ def aboutcss():
 
 @app.route('/favorite-course', methods=['GET','POST'])
 def favoritecourse():
-    if request.method == 'POST':
         print('Subject Entered: ' + request.args.get('subject_name'))
         print('Course Entered: ' + request.args.get('course_number'))
         print ('You entered your favorite course as:' + request.form.get('subject_name''  ''course_number'))
