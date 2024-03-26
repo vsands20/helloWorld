@@ -31,13 +31,10 @@ def favoritecourse():
 @app.route('/contact',methods = ['GET','POST'])
 def contact():
     if request.method =='POST':
-        print('First Name: ' + request.form.get('firstname'))
-        print('Last Name: ' + request.form.get('lastname'))
-        print('Email: ' + request.form.get('emailaddress'))
-        print('Phone Number: ' + request.form.get('phonenumber'))
+        return render_template('contact.html',form_submitted=True)
 
-
-    return render_template('contact.html')
+    else:
+        return render_template('contact.html')
 
 if __name__ == '__main__':
     app.run()
