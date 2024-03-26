@@ -1,38 +1,57 @@
+{% extends "base.html" %}
 <!DOCTYPE html>
 <html lang="en">
     <meta charset="UTF-8">
     <title>Contact</title>
-   <h2>Contact Information</h2>
 
+{% block page_head %}
+    Contact Information
+{% endblock %}
+      <p></p>
+      <p></p>
 
 {% block page_content %}
       {%  if form_submitted %}
         <div class = "col-12">
-            <h4>Thank you for submitting your contact information! Below is the information you submitted:</h4>
+            <h5>Thank you for submitting your contact information! Below is the information you submitted:</h5>
         </div>
+            <p></p>
         <div class = "col-md-6" >
             <h5>First Name: </h5>
         </div>
+          <p></p>
         <div class="col-md-6">
-            <p>{{ request.form.get('first_name') }}</p>
+            <p>{{ request.form.get('first_name') }}
+
+            </p>
         </div>
+          <p></p>
       <div class = "col-md-6" >
             <h5>Last Name: </h5>
         </div>
         <div class="col-md-6">
-            <p>{{ request.form.get('last_name') }}</p>
+            <p>{{ request.form.get('last_name') }}
+
+            </p>
         </div>
+        <p></p>
       <div class = "col-md-6" >
             <h5>Email Address: </h5>
         </div>
+        <p></p>
         <div class="col-md-6">
-            <p>{{ request.form.get('email_address') }}</p>
+            <p>{{ request.form.get('email_address') }}
+
+            </p>
         </div>
+       <p></p>
       <div class = "col-md-6" >
             <h5>Phone Number: </h5>
         </div>
-        <div class="col-md-6">
-            <p>{{ request.form.get('phone_number') }}</p>
+          <p></p>
+          <div class="col-md-6">
+            <p>{{ request.form.get('phone_number') }}
+            </p>
         </div>
 
 
@@ -41,19 +60,23 @@
             <div class="col-md-6">
                 <label for="first_name" class = "form-label">First Name</label>
                 <input  class = "form-control" id="first_name" name ="first_name">
-            </div>
+            </div
+                  <p></p>
             <div class="col-md-6">
                 <label for="last_name" class = "form-label">Last Name</label>
                 <input  class = "form-control" id="last_name" name ="lasst_name">
             </div>
+              <p></p>
             <div class="col-md-6">
                 <label for="email_address" class = "form-label">Email Address</label>
                 <input  class = "form-control" id="email_address" name ="email_address">
             </div>
+              <p></p>
             <div class="col-12">
                 <label for="phone_number" class = "form-label">Phone Number</label>
                 <input  class = "form-control" id="phone_number" name ="phone_number">
             </div>
+              <p></p>
                <button type = "submit" class = "btn btn-primary"> Submit</button>
         </form>
       {% endif %}
