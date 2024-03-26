@@ -31,7 +31,6 @@ def favoritecourse():
 @app.route('/contact',methods = ['GET','POST'])
 def contact():
     if request.method =='POST':
-        print('Thank you for filling out our contact form. Below is the information you entered:')
         print('First Name: ' + request.form.get('firstname'))
         print('Last Name: ' + request.form.get('lastname'))
         print('Email: ' + request.form.get('emailaddress'))
