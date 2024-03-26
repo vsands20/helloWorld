@@ -4,11 +4,9 @@
     Favorite Courses
 {% endblock %}
 
-<body>
-
  <p>You entered your favorite course as:</p>
    <div class="col-md-6">
             <p>{{ request.args.get('subject') }} {{ request.args.get('course_number') }}
             </p>
         </div>
-</body>
+
