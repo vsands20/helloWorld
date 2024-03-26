@@ -24,7 +24,7 @@ def favoritecourse():
 
     print('Subject Entered: ' + request.args.get('subject_name'))
     print('Course Entered: ' + request.args.get('course_number'))
-    print ('You entered your favorite course as:' + request.form.get('subject_name''  ''course_number'))
+    print ('You entered your favorite course as:' + request.form.get('subject_name')+ request.form.get('course_number'))
 
 
     return render_template('favorite-course.html')
