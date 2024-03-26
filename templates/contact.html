@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact</title>
+  </head>
+  <body>
+        <form class = "row g-3" action="{{ url_for('contact' }}" method="post">
+            <div class="mb-3">
+                <label for="firstnameinput" class = "form-label">First Name</label>
+                <input type = "firstname" class = "form-control" id="firstnameinput">
+            </div>
+            <div class="mb-3">
+                <label for="lastnameinput" class = "form-label">Last Name</label>
+                <input type = "lastname" class = "form-control" id="lastnameinput">
+            </div>
+            <div class="mb-3">
+                <label for="emailaddressinput" class = "form-label">Email Address</label>
+                <input type = "emailaddress" class = "form-control" id="emailaddressinput">
+            </div>
+            <div class="mb-3">
+                <label for="phonenumberinput" class = "form-label">Phone Number</label>
+                <input type = "phonenumber" class = "form-control" id="phonenumberinput">
+            </div>
+            <div class="mb-3">
+               <button type = "submit" class = "btn btn-primary"> Submit</button>
+            </div>
+        </form>
+  </body>
+</html>
