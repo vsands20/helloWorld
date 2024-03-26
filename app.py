@@ -21,10 +21,8 @@ def aboutcss():
 
 @app.route('/favorite-course')
 def favoritecourse():
-
-    print('Subject Entered: ' + request.args.get('subject'))
+    print('Subjected Entered: ' + request.args.get('subject'))
     print('Course Entered: ' + request.args.get('course_number'))
-
 
     return render_template('favorite-course.html')
 
